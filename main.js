@@ -10,7 +10,7 @@ form.addEventListener('submit', function(e){
     const clima = document.getElementById('clima');
 
     // link do API.
-    const geoCodifica = conectaOpemWether(`http://api.openweathermap.org/geo/1.0/direct?q=${estado.value},brazil&appid=c48873c5b82c2088f582be94f0c9fef0`);
+    const geoCodifica = conectaOpemWether(`https://api.openweathermap.org/geo/1.0/direct?q=${estado.value},brazil&appid=c48873c5b82c2088f582be94f0c9fef0`);
     var dadosGeo = JSON.parse(geoCodifica);
     const opemWether = conectaOpemWether(`https://api.openweathermap.org/data/2.5/weather?lat=${dadosGeo[0].lat}&lon=${dadosGeo[0].lon}&appid=9b589f5fc773e23b05730bbe917f3938&units=metric`);
     // pegando um arquivo json e passando para array.
