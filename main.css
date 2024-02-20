@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contander form, header h1{
+    padding: 20px;
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.separador{
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+input{
+    height: 30px;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(5, 78, 127);
+}
+
+form button{
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    border: 1px solid rgb(5, 78, 127);
+    background-color: rgb(5, 78, 127);
+    color: aliceblue;
+}
+
+form label{
+    font-size: 20px;
+}
+
+.contander{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contander h2{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contander .divTemp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-radius: 10px;
+    font-size: 120%;
+    background: linear-gradient(90deg, rgb(25, 86, 118), rgba(8, 104, 177, 0.819));
+    color: rgb(173, 218, 232);
+}
+
+.h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 20px;
+    border: 1px solid rgba(173, 192, 196, 0.689);
+    border-radius: 10px;
+    font-size: 120%;
+    background-color: rgba(179, 208, 227, 0.816);
+    color: rgb(9, 94, 119);
+    opacity: 70%;
+}
+
+#primeiroHist{
+    display: none;
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 430px){
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    form button{
+        margin: 20px 0;
+        height: 70px;
+        width: 100px;
+    }
+
+    .content{
+        max-width: 430px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contander .divTemp{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0 20px;
+        border-radius: 10px;
+        font-size: 120%;
+        background: linear-gradient(90deg, rgb(25, 86, 118), rgba(8, 104, 177, 0.819));
+        color: rgb(173, 218, 232);
+    }
+
+    #visorHumi{
+        padding-bottom: 20px;
+    }
+
+    .h{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 30px;
+        padding: 0 20px;
+        border-radius: 10px;
+        font-size: 120%;
+        background-color: rgba(179, 208, 227, 0.816);
+        color: rgb(9, 94, 119);
+        opacity: 70%;
+    }
+
+    #visorHumiHist{
+        padding-bottom: 20px;
+    }
+
+    
+}

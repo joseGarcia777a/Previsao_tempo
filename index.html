@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsao do Tempo</title>
+    <link href="./main.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="contander">
+        <h1>Tempo Agora</h1>
+    </header>
+    <main>
+        <section class="contander separador">
+            <form id="form">
+                <label>Digite a Regiao:</label>
+                <input id="estado" type="text" placeholder=" Ex: goiania"/>
+                <button type="submit"> pesquisar</button>
+            </form>
+        </section>
+        <section class="contander separador">
+            <h2>Clima & Tempo</h2>
+            <div class="divTemp">
+                <img id="clima" src="https://openweathermap.org/img/wn/10d@2x.png"/>
+                <h4 id="visorPais">Pais</h4>
+                    <h4 id="visorEstado">Estado</h4>
+                    <h4>Temperatura:</h4>
+                    <p id="visorTemp">0.0</p>
+                    <h4>Humidade relativa do ar:</h4>
+                    <p id="visorHumi">0.0</p>
+            </div>
+        </section>
+        <section class="contander" id="secHist">
+            <h2>Historico de pesquisa</h2>
+            <div class="h histori" id="primeiroHist">
+                <img id="climaHist" src="https://openweathermap.org/img/wn/10d@2x.png"/>
+                <h4 id="visorPaisHist">Pais</h4>
+                    <h4 id="visorEstadoHist">Estado</h4>
+                    <h4>Temperatura:</h4>
+                    <p id="visorTempHist">0.0</p>
+                    <h4>Humidade relativa do ar:</h4>
+                    <p id="visorHumiHist">0.0</p>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
